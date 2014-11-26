@@ -46,5 +46,3 @@ busca n (Root m t1 t2)
 	| n == m = True
 	| n > m  = busca n t2
 	| otherwise = busca n t1
-	
-test
