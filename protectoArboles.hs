@@ -33,8 +33,8 @@ leafs (Root n t1 t2) = leafs t1 + leafs t2
 insertBST :: Int -> BinTreeInt -> BinTreeInt
 insertBST n Empty = Root n Empty Empty
 insertBST n (Root m t1 t2) = if n>m then
-							Root m t1 (insertBST n t2) else
-							Root m (insertBST n t1) t2	
+		  		Root m t1 (insertBST n t2) else
+				Root m (insertBST n t1) t2	
 
 crea_arbol_busqueda :: [Int] -> BinTreeInt
 crea_arbol_busqueda [] = Empty
